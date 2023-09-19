@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Icon Converter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Icon Converter</h1>
+    <form id="image-form">
+      <label for="image-upload">Select an image:</label>
+      <input type="file" id="image-upload" accept="image/png, image/jpeg, image/jpg">
+      <fieldset>
+        <legend>Select the desired sizes:</legend>
+        <label>
+          <input type="checkbox" name="sizes" value="16"> 16x16
+        </label>
+        <label>
+          <input type="checkbox" name="sizes" value="32"> 32x32
+        </label>
+        <label>
+          <input type="checkbox" name="sizes" value="48"> 48x48
+        </label>
+        <label>
+          <input type="checkbox" name="sizes" value="96"> 96x96
+        </label>
+        <label>
+          <input type="checkbox" name="sizes" value="128"> 128x128
+        </label>
+        <label>
+          <input type="checkbox" name="sizes" value="256"> 256x256
+        </label>
+      </fieldset>
+      <button type="submit">Convert</button>
+    </form>
+    <div id="output"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
